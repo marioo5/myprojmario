@@ -1,0 +1,13 @@
+<table>
+
+    <tr>
+      <th>Id</th>
+      <th>Título</th>
+    </tr>
+
+    <tr *ngFor="let cd of cds">
+      <td>{{cd.id}}</td>
+      <td [routerLink]="['/informacion', cd.id]" >{{cd.titulo}}</td>
+    </tr>
+
+</table>
