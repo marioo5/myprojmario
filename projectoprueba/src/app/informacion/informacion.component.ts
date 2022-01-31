@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-informacion',
@@ -12,7 +12,7 @@ export class InformacionComponent implements OnInit {
   cdId:any;
   cdClick:any;
 
-  constructor(private rutausuario:ActivatedRoute) { 
+  constructor(private rutausuario:ActivatedRoute, private router: Router) { 
     this.cds = [
       {id:'1',titulo:'Thriller', autor:'Mickel Jackson', precio: '12€', canciones:['Wanna Be Startin Somethin', 'Baby Be Mine','Thriller']},
       {id:'2',titulo:'Back in Black', autor:'ACDC', precio: '15€', canciones:['Hells Bells','Shoot to Thrill','Givin the Dog a Bone']},

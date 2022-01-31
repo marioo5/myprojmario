@@ -2,4 +2,11 @@
 <div class="content">
 <a class="button" [routerLink]="['listado-cds']">Listado Cds</a>
 <a class="button" href="/">Inicio</a>
+
+<h2>Cds vistos</h2>
+<ul *ngIf="cdsVistos.verListado()">
+    <li *ngFor="let cd of cdsVistos.verListado()">
+        {{cd.titulo}}
+    </li>
+</ul>
 </div>

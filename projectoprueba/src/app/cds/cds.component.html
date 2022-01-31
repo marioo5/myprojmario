@@ -7,7 +7,9 @@
 
     <tr *ngFor="let cd of cds">
       <td>{{cd.id}}</td>
-      <td [routerLink]="['/informacion', cd.id]" >{{cd.titulo}}</td>
+      <td (click)="agregarCd(cd)" [routerLink]="['/informacion', cd.id]" >{{cd.titulo}}</td>
     </tr>
 
 </table>
+<div class="loader" *ngIf="cargandoCds"></div>
+<div *ngIf="errorHttp">Ha habido un error en la carga ...</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CdclickedService } from '../cdclicked.service';
+import { HttpClient, HttpResponse} from '@angular/common/http';
 
 @Component({
   selector: 'app-cds',
@@ -7,23 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CdsComponent implements OnInit {
 
-  verCd: any;
-  cds : Array<any>;
-
-  constructor() { 
-    this.cds = [
-      {id:'1',titulo:'Thriller', autor:'Mickel Jackson'},
-      {id:'2',titulo:'Back in Black', autor:'ACDC'},
-      {id:'3',titulo:'The Dark Side Of The Moon', autor:'Pink Floyd'}
-    ];
-  }
-
-  showCd(_cd:any){
-    this.verCd = 'El precio es ' + _cd.precio + ' compuesto por ' + _cd.autor + ' con las siguientes canciones: ' + _cd.canciones;
-    alert(this.verCd);
+  cds: any;
+  errorHttp: any;
+  cargandoCds: boolean;
+  
+  constructor(private http: HttpClient, public Cdclicked: CdclickedService) { 
+  
+    this.cargandoCds = true;
   }
 
   ngOnInit(): void {
+    this.cargarLista();
+  }
+
+  cargarLista(){
+    this.http.get('./assets/lista-cds.json').subscribe(
+      data => {this.cds = data;
+      this.cargandoCds = false},
+      data => {this.errorHttp = true;}
+    );
+  }
+
+  agregarCd(_cdVisto:any){
+    this.Cdclicked.cdVisto(_cdVisto);
+
   }
 
 }

@@ -1,0 +1,123 @@
+[{
+    "id": "1",
+    "titulo": "Terral",
+    "autor": "Pablo Alboran",
+    "canciones": "['Por fin', 'La escalera', 'Ecos', 'Pasos de cero', 'Está permitido', 'Recuérdame']"
+  },
+  {
+    "id": "2",
+    "titulo": "Mil batallas",
+    "autor": "Malú",
+    "canciones": "['Abran fuego', 'Deshielo', 'Secreto a voces', 'Después de la tormenta', 'Mil batallas', 'Qué tarde']"
+  },
+  {
+    "id": "3",
+    "titulo": "Lágrimas desordenadas",
+    "autor": "Melendi",
+    "canciones": "['Tu jardin de enanitos', 'Lágrimas desordenas', 'Checque al Portamor', 'Tu lista de enemigos', 'Aprendiz de caballero']"
+  },
+  {
+    "id": "4",
+    "titulo": "Terral",
+    "autor": "Pablo Alboran",
+    "canciones": "['Por fin', 'La escalera', 'Ecos', 'Pasos de cero', 'Está permitido', 'Recuérdame']"
+  },
+  {
+    "id": "5",
+    "titulo": "Thriller",
+    "autor": "Mickel Jackson",
+    "canciones": "['Wanna Be Startin Somethin', 'Baby Be Mine', 'Thriller']"
+  }, {
+    "id": "6",
+    "titulo": "Back in Black",
+    "autor": "ACDC",
+    "canciones": "['Hells Bells', 'Shoot to Thrill', 'Givin the Dog a Bone']"
+  },
+  {
+    "id": "7",
+    "titulo": "The Dark Side Of The Moon",
+    "autor": "Pink Floyd",
+    "canciones": "['Speak to Me', 'Breathe', 'On the Run']"
+  }, {
+    "id": "8",
+    "titulo": "Terral",
+    "autor": "Pablo Alboran",
+    "canciones": "['Por fin', 'La escalera', 'Ecos', 'Pasos de cero', 'Está permitido', 'Recuérdame']"
+  },
+  {
+    "id": "9",
+    "titulo": "Mil batallas",
+    "autor": "Malú",
+    "canciones": "['Abran fuego', 'Deshielo', 'Secreto a voces', 'Después de la tormenta', 'Mil batallas', 'Qué tarde']"
+  },
+  {
+    "id": "10",
+    "titulo": "Lágrimas desordenadas",
+    "autor": "Melendi",
+    "canciones": "['Tu jardin de enanitos', 'Lágrimas desordenas', 'Checque al Portamor', 'Tu lista de enemigos', 'Aprendiz de caballero']"
+  },
+  {
+    "id": "11",
+    "titulo": "Terral",
+    "autor": "Pablo Alboran",
+    "canciones": "['Por fin', 'La escalera', 'Ecos', 'Pasos de cero', 'Está permitido', 'Recuérdame']"
+  },
+  {
+    "id": "12",
+    "titulo": "Thriller",
+    "autor": "Mickel Jackson",
+    "canciones": "['Wanna Be Startin Somethin', 'Baby Be Mine', 'Thriller']"
+  }, {
+    "id": "13",
+    "titulo": "Back in Black",
+    "autor": "ACDC",
+    "canciones": "['Hells Bells', 'Shoot to Thrill', 'Givin the Dog a Bone']"
+  },
+  {
+    "id": "14",
+    "titulo": "The Dark Side Of The Moon",
+    "autor": "Pink Floyd",
+    "canciones": "['Speak to Me', 'Breathe', 'On the Run']"
+  },
+  {
+    "id": "15",
+    "titulo": "Terral",
+    "autor": "Pablo Alboran",
+    "canciones": "['Por fin', 'La escalera', 'Ecos', 'Pasos de cero', 'Está permitido', 'Recuérdame']"
+  },
+  {
+    "id": "16",
+    "titulo": "Mil batallas",
+    "autor": "Malú",
+    "canciones": "['Abran fuego', 'Deshielo', 'Secreto a voces', 'Después de la tormenta', 'Mil batallas', 'Qué tarde']"
+  },
+  {
+    "id": "17",
+    "titulo": "Lágrimas desordenadas",
+    "autor": "Melendi",
+    "canciones": "['Tu jardin de enanitos', 'Lágrimas desordenas', 'Checque al Portamor', 'Tu lista de enemigos', 'Aprendiz de caballero']"
+  },
+  {
+    "id": "18",
+    "titulo": "Terral",
+    "autor": "Pablo Alboran",
+    "canciones": "['Por fin', 'La escalera', 'Ecos', 'Pasos de cero', 'Está permitido', 'Recuérdame']"
+  },
+  {
+    "id": "19",
+    "titulo": "Thriller",
+    "autor": "Mickel Jackson",
+    "canciones": "['Wanna Be Startin Somethin', 'Baby Be Mine', 'Thriller']"
+  }, {
+    "id": "20",
+    "titulo": "Back in Black",
+    "autor": "ACDC",
+    "canciones": "['Hells Bells', 'Shoot to Thrill', 'Givin the Dog a Bone']"
+  },
+  {
+    "id": "21",
+    "titulo": "The Dark Side Of The Moon",
+    "autor": "Pink Floyd",
+    "canciones": "['Speak to Me', 'Breathe', 'On the Run']"
+  }
+]

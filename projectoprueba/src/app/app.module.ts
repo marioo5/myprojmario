@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,7 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { CdsComponent } from './cds/cds.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { InformacionComponent } from './informacion/informacion.component';
+import { CdclickedService } from './cdclicked.service';
 
 const rutas:Routes = [
   {path:'listado-cds', component: CdsComponent},
@@ -32,9 +35,12 @@ const rutas:Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(rutas)
+    RouterModule.forRoot(rutas),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CdclickedService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

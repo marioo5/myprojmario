@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CdclickedService } from '../cdclicked.service';
 
 @Component({
   selector: 'app-cabecera',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabeceraComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cdsVistos: CdclickedService) { }
 
   ngOnInit(): void {
   }

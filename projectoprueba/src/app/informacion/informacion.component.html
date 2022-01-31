@@ -1,5 +1,10 @@
-<h2>Cd Título: {{cdClick.titulo}}</h2>
-<span>Compuesto por: {{cdClick.autor}}</span><br>
-<span>Precio: {{cdClick.precio}}</span><br>
-<span>Canciones: {{cdClick.canciones}}</span>
-
+<ng-template #cds>
+    <h2>Titulo del CD: {{cdClick.titulo}}</h2>
+  <span>Cantado por: {{cdClick.autor}}</span><br>
+  <span>Precio: {{cdClick.precio}}</span>
+  <ul>
+    <li *ngFor="let cancion of cdClick.canciones">
+        {{cancion}}
+    </li>
+  </ul>
+</ng-template>
