@@ -1,0 +1,13 @@
+li{
+    transition: 0.3s all;
+}
+
+.miclase{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+li[data-select="true"]:not(.miclase){
+    background: #BEAAD0;
+}

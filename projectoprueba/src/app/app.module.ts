@@ -13,9 +13,11 @@ import { CdsComponent } from './cds/cds.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { CdclickedService } from './cdclicked.service';
+import { RendercdsComponent } from './rendercds/rendercds.component';
 
 const rutas:Routes = [
   {path:'listado-cds', component: CdsComponent},
+  {path:'renderer2',component:RendercdsComponent},
   {path:'', component:InicioComponent, pathMatch: 'full'},
   {path:'informacion/:cdId', component: InformacionComponent},
   {path:'informacion', redirectTo: '/'},
@@ -30,7 +32,8 @@ const rutas:Routes = [
     CabeceraComponent,
     CdsComponent,
     InicioComponent,
-    InformacionComponent
+    InformacionComponent,
+    RendercdsComponent
   ],
   imports: [
     BrowserModule,
