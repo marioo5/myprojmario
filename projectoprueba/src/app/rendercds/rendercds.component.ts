@@ -1,3 +1,4 @@
+import { elementEventFullName } from '@angular/compiler/src/view_compiler/view_compiler';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
@@ -22,13 +23,23 @@ export class RendercdsComponent implements OnInit {
   }
 
   ActivateMethod(elemen:HTMLElement){
-    if (this.clearElement){
+    if (this.clearElement === elemen || elemen.hasAttribute("data-select")){
       this.ren.removeClass(this.clearElement, 'miclase');
-    };
+    } else {
 
+      let titulo = elemen.innerText;
+      let boton: HTMLButtonElement = this.ren.createElement("button");
+      this.ren.setProperty(boton, "innerText", "Comprar");
+      this.ren.listen(boton, 'click', function (evento: any) {
+        alert(titulo + " comprado")
+      });
+
+    this.ren.appendChild(elemen, boton);
     let nuevoElemento = this.ren.createElement("span");
     this.ren.setProperty(nuevoElemento, "innerHTML" , " ✅ ");
     this.ren.appendChild(elemen, nuevoElemento );
+
+    }
 
     this.ren.setAttribute(elemen, 'data-select', 'true');
     this.ren.addClass(elemen, 'miclase');
@@ -38,22 +49,5 @@ export class RendercdsComponent implements OnInit {
   ActivateMethod2(elemen:HTMLElement){
     this.ren.removeClass(elemen, 'miclase');
   }
-
-  comprar(elemen:HTMLElement){
-    if (this.clearElement){
-      this.ren.removeClass(this.clearElement, 'miclase');
-    };
-
-    let nuevoElemento = this.ren.createElement("button");
-    this.ren.setProperty(nuevoElemento, "innerHTML" , " comprar ");
-    this.ren.setProperty(nuevoElemento, "onclick" , "alert('Comprado')");
-    this.ren.appendChild(elemen, nuevoElemento);
-
-    this.ren.setAttribute(elemen, 'data-select', 'true');
-    this.clearElement=elemen;
-  }
-
-
-    
 
 }
